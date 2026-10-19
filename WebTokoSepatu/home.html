@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxury Timepieces | J&C</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #111;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      background: black;
+      height: 83vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #fff;
+      text-shadow: 0 0 10px rgba(255,255,255,0.3);
+    }
+
+    .section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .product-card {
+      background-color: #111;
+      border: 1px solid #333;
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.3s;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: #777;
+    }
+
+    .product-card p {
+      margin: 0;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">J&C</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="collection.html">Collections</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Crafted for Comfort, Designed for Style</h1>
+  </section>
+
+  <section class="section">
+    <h2>Featured Collection</h2>
+    <div class="products">
+      <div class="product-card" onclick="window.location.href='men.html'">
+        <p>Men</p>
+      </div>
+      <div class="product-card" onclick="window.location.href='women.html'">
+        <p>Women</p>
+      </div>
+      <div class="product-card" onclick="window.location.href='kids.html'">
+        <p>Kids</p>
+      </div>
+      <div class="product-card" onclick="window.location.href='baby.html'">
+        <p>Baby</p>
+      </div>
+      <div class="product-card" onclick="window.location.href='unisex.html'">
+        <p>Unisex</p>
+      </div>
+      <div class="product-card" onclick="window.location.href='outdoor.html'">
+        <p>Outdoors</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 Shoes Shop
+  </footer>
+
+</body>
+</html>
